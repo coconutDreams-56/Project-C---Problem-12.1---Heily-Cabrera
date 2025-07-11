@@ -78,9 +78,9 @@ int main() {
     vector<int> data(SIZE);
 
 
-    random_num rd;
+    random_device rd;
     mt19937 gen(rd());
-    uniform_distribution<> dis(1, 1000000);
+    uniform_int_distribution<> dis(1, 1000000);
 
     for (int i = 0; i < SIZE; i++) 
     {
